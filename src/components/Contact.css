@@ -1,0 +1,118 @@
+/* Full-screen layout for the contact section */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height */
+    width: 100vw; /* Full width */
+    background-color: #0b1121;
+    color: white;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Centered contact content */
+  .contact-content {
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    background-color: #0b1121;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Title and description */
+  .contact h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .contact p {
+    font-size: 16px;
+    color: #b0b0b0;
+    margin-bottom: 20px;
+  }
+  
+  /* Form styling */
+  .contact-form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    background-color: #1b2335;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    padding: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .contact-form input::placeholder,
+  .contact-form textarea::placeholder {
+    color: #aaa;
+  }
+  
+  .contact-form button {
+    background-color: #4db5ff;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #3c9cd6;
+  }
+  
+  /* Social Icons */
+  .social-icons {
+    position: fixed;
+    top: 50%;
+    left: 20px;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+  }
+  
+  .social-icons .icon {
+    margin: 10px 0;
+    width: 40px;
+    height: 40px;
+    font-size: 24px;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  /* Individual icon colors */
+  .icon.linkedin {
+    background-color: #0077b5;
+  }
+  
+  .icon.github {
+    background-color: #333;
+  }
+  
+  .icon.email {
+    background-color: #34a853;
+  }
+  
+  .icon.contact {
+    background-color: #ff9800;
+  }
+  
+  .social-icons .icon:hover {
+    color: #fff;
+    opacity: 0.8;
+  }
+  

@@ -1,0 +1,77 @@
+/* Full page layout with a centered container */
+.about-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw; /* Ensure the section spans the full viewport width */
+  background-color: #0d1724;
+  color: #fff;
+  position: relative;
+}
+
+/* Social media icons on the left */
+.social-icons {
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+}
+
+.social-icons .icon {
+  margin-bottom: 15px;
+  font-size: 24px;
+  text-decoration: none;
+  color: #fff;
+}
+
+.social-icons .linkedin {
+  background-color: #0077b5;
+}
+
+.social-icons .github {
+  background-color: #333;
+}
+
+.social-icons .email {
+  background-color: #25d366;
+}
+
+.social-icons .contact {
+  background-color: #f39c12;
+}
+
+.social-icons .icon i {
+  padding: 12px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.social-icons .icon:hover i {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+/* Main about content in the center */
+.about-content {
+  text-align: center;
+  max-width: 700px;
+  padding: 20px;
+  background-color: #2d6e75;
+  border-radius: 10px;
+  flex-grow: 1; /* Ensure it takes the available space */
+}
+
+.about-content h2 {
+  font-size: 32px;
+  margin-bottom: 20px;
+  border-bottom: 3px solid #fff;
+  display: inline-block;
+}
+
+.about-content p {
+  font-size: 18px;
+  line-height: 1.6;
+}

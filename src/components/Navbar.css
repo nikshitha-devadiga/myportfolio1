@@ -1,0 +1,70 @@
+@import "@fortawesome/fontawesome-free/css/all.min.css";
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 30px; /* Adjusted padding */
+    background-color: #0b1121;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping */
+    gap: 20px;
+}
+
+.nav-links li {
+    font-size: 18px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #4db5ff;
+}
+
+.side-icons {
+    position: fixed;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.side-icons a {
+    display: block;
+    margin: 10px 0;
+    color: white;
+    font-size: 24px;
+}
+
+/* Add this CSS to show the contact bar */
+.contact-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.contact-bar a {
+    color: white;
+    text-decoration: none;
+}
+
+.contact-bar a:hover {
+    color: #4db5ff;
+}
